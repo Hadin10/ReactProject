@@ -1,0 +1,51 @@
+div{
+  float: left;
+  box-sizing: border-box;
+}
+.grid_image{
+  position: relative;
+}
+
+.grid_image:hover{
+  opacity: .5;
+}
+.grid_image:hover input {
+  opacity: 1;
+}
+input{
+  position: 'absolute';
+  opacity:0;
+  cursor: pointer;
+}
+input:checked{ 
+  opacity: 1; 
+}
+Card{
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 100%;
+}
+CardMedia{
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
